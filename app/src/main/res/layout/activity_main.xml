@@ -21,11 +21,11 @@
 
     <HorizontalScrollView
         android:id="@+id/hsv_pokemon"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/tv_titulo">
 
         <LinearLayout
@@ -127,4 +127,121 @@
 
     </HorizontalScrollView>
 
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="80dp" />
+
+    <ScrollView
+        app:barrierMargin="@dimen/cardview_default_elevation"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_titulo"
+        android:scrollbars="none">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingVertical="8dp"
+            >
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_1"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_3"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_4"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_5"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_6"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_7"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_8"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_9"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+            <ImageView
+                android:id="@+id/img_pokemon_mini_10"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginVertical="16dp"
+                android:layout_weight="1" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
